@@ -1,6 +1,21 @@
 ﻿const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-let options = {
+
+//导入css
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+//var exStylecss = new ExtractTextPlugin('./app/test.css');
+
+
+
+
+
+
+
+
+let options = [
+//01
+	{
 	entry: {
 		main: './app/main.js'
 	},
@@ -13,19 +28,24 @@ let options = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader?minimize']
-			},
-			{
-				test: /\.html$/,
-				use: 'html-loader'
+				//use: exStylecss.extract({
+				//	fallback: "style-loader",
+				//	use: ["css-loader"]
+				//})
 			}
 		]
 	},
-	plugins: [new HtmlWebpackPlugin({
-		title: '测试模板',
-		filename: 'fucker.html',
-		template:'./app/index.html'
-	})]
-};
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: '测试模板',
+			filename: 'index.html',
+			template: './app/index.html'
+		}),
+
+	]
+	},
+
+];
 
 
 
