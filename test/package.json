@@ -1,0 +1,22 @@
+{
+  "name": "webpack_test",
+  "version": "0.1.0",
+  "description": "This is my first webpack app for test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "1234560"
+  ],
+  "author": "zbc",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
