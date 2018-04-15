@@ -6,13 +6,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //var exStylecss = new ExtractTextPlugin('./app/test.css');
 
-
-
-
-
-
-
-
 let options = [
 //01
 	{
@@ -27,11 +20,12 @@ let options = [
 		rules: [
 			{
 				test: /\.css$/,
-				use: ['style-loader', 'css-loader?minimize']
-				//use: exStylecss.extract({
-				//	fallback: "style-loader",
-				//	use: ["css-loader"]
-				//})
+				//use: ['style-loader', 'css-loader?minimize']
+				use: ExtractTextPlugin.extract({
+					fallback: "style-loader",
+          use: ["css-loader"],
+          publicfile: path.resolve(__dirname, './dist')
+				})
 			}
 		]
 	},
@@ -41,7 +35,7 @@ let options = [
 			filename: 'index.html',
 			template: './app/index.html'
 		}),
-
+    new ExtractTextPlugin("[name].css")
 	]
 	},
 
