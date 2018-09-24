@@ -1,0 +1,15 @@
+complete 1.把多个文件打包 
+
+complete 2.测试整合 babel （ES5 => ES6）
+
+	babel 单独使用，webpack 单独使用
+	babel只需要使用 babel-preset-es2015 和 babel-cli
+	母爱去哪此方法可以向下兼容至ie9
+
+3.
+
+
+
+
+
+
