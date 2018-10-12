@@ -1,15 +1,7 @@
-complete 1.°Ñ¶à¸öÎÄ¼ş´ò°ü 
+complete 1.Â°Ã‘Â¶Ã Â¸Ã¶ÃÃ„Â¼Ã¾Â´Ã²Â°Ã¼ 
 
-complete 2.²âÊÔÕûºÏ babel £¨ES5 => ES6£©
-
-	babel µ¥¶ÀÊ¹ÓÃ£¬webpack µ¥¶ÀÊ¹ÓÃ
-	babelÖ»ĞèÒªÊ¹ÓÃ babel-preset-es2015 ºÍ babel-cli
-	Ä¸°®È¥ÄÄ´Ë·½·¨¿ÉÒÔÏòÏÂ¼æÈİÖÁie9
-
-3.
-
-
-
-
+complete 2.ä½¿ç”¨ babel è¾¾æˆ ES5 => ES6
+		   åªéœ€è¦ babel-preset-es2015 å’Œ babel-cli å³å¯å®Œæˆæ­¤åŠ¨ä½œ
+		   
 
 
