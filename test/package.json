@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "babel src -d lib",
-     "bundle":"webpack"
+    "build": "babel src -d lib",
+    "bundle": "webpack"
   },
   "author": "zbc",
   "license": "ISC",
@@ -15,5 +15,8 @@
     "babel-preset-es2015": "^6.24.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "echarts": "^4.2.0-rc.1"
   }
 }
