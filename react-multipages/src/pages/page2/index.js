@@ -4,15 +4,15 @@ import "./style.scss";
 import "./index.css";
 
 class Default extends React.Component {
-
+	
 	state = {
-		value: 111123423
+		value: 2
 	};
 
 	componentDidMount() {
 		setTimeout(() => {
 			this.setState({
-				value: "zbbdf"
+				value: "zbbdf2"
 			});
 		}, 1000);
 	}
