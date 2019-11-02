@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.config.js&&webpack-dev-server --open",
-    "build": "webpack --webpack.config.js"
+    "calc": "node scripts/calc.js",
+    "start": "node scripts/calc.js && webpack --config webpack.config.js && webpack-dev-server --open",
+    "build": "node scripts/calc.js && webpack --webpack.config.js"
   },
   "author": "zbc",
   "license": "ISC",
